@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "**/*.html",
+        "use": "@vercel/static"
+      }
+    ],
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/", "dest": "/index.html" },
+      { "src": "/car-list", "dest": "/car-list.html" },
+      { "src": "/car", "dest": "/car.html" },
+      { "src": "/login", "dest": "/login.html" },
+      { "src": "/my-account", "dest": "/my-account.html" },
+      { "src": "/(.+)", "dest": "/$1" }
+    ]
+  }

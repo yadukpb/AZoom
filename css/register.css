@@ -1,0 +1,158 @@
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 30px;
+  gap: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 20px;
+  border-radius: 10px;
+  height: fit-content;
+}
+
+.form-container > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3572ef;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+form label {
+  font-size: 16px;
+  color: #3572ef;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #3572ef;
+}
+
+form button {
+  padding: 8px 16px;
+  background-color: #3572ef;
+  color: #ffffff;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: fit-content;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+form button:hover {
+  background-color: #4f88f9;
+}
+
+form button:active {
+  background-color: #1b5fe7;
+}
+
+.illustration {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/car-4.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  min-height: 100vh;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .illustration {
+    display: none;
+  }
+}
+
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-container h1 {
+  font-size: 20px;
+  color: #3572ef;
+}
+
+.footer-info-container p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-link-container h3 {
+  font-size: 16px;
+  color: #3572ef;
+}
+
+.footer-link-container a {
+  font-size: 14px;
+  color: #3572ef;
+  text-decoration: none;
+}
+
+.footer-link-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .detail-container,
+  .reservation-container,
+  .payment-container,
+  .success-message-container {
+    width: 100%;
+  }
+}

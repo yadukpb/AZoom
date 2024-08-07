@@ -1,0 +1,197 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#header-logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #3572ef;
+  margin: 0;
+}
+
+.button-container button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 999px;
+  background-color: #3572ef;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button-container button:hover {
+  background-color: #4f88f9;
+}
+
+.button-container button:active {
+  background-color: #1b5fe7;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 40px 60px;
+  gap: 40px;
+  background-color: #f8f9fa;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+              rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.form-container > h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-size: 16px;
+  color: #666;
+}
+
+form input {
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #3572ef;
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #3572ef;
+  color: #ffffff;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+form button:hover {
+  background-color: #4f88f9;
+}
+
+form button:active {
+  background-color: #1b5fe7;
+}
+
+.illustration {
+  width: 50%;
+  height: auto;
+  background-image: url("../img/car-3.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  min-height: 100vh;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.footer-info-container,
+.footer-link-container {
+  flex: 1;
+}
+
+.footer-info-container {
+  margin-right: 20px;
+}
+
+.footer-info-container h1,
+.footer-link-container h3 {
+  margin: 0 0 10px 0;
+}
+
+.footer-info-container p,
+.footer-link-container a {
+  color: #666;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.footer-link-container a:hover {
+  color: #3572ef;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .illustration {
+    display: none;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container button {
+    margin: 5px 0;
+  }
+}

@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 18px;
+  background-color: #ffffff;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  top: 0;
+}
+
+header > p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3572ef;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+header > p:hover {
+  color: #4f88f9;
+}
+
+header > p:active {
+  color: #1b5fe7;
+}
+
+header + main {
+  margin-top: 80px;
+}
+
+header > .button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+header > .button-container > button {
+  padding: 8px 16px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 999px;
+  transition: background-color 0.3s;
+}
+
+.btn-register {
+  background-color: #3572ef;
+  color: #ffffff;
+}
+
+.btn-register:hover {
+  background-color: #4f88f9;
+}
+
+.btn-register:active {
+  background-color: #1b5fe7;
+}
+
+.btn-login {
+  background-color: #ffffff;
+  color: #3572ef;
+  border: 1px solid #3572ef;
+}
+
+.btn-login:hover {
+  background-color: #f2f2f2;
+}
+
+.btn-login:active {
+  background-color: #e6e6e6;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  padding: 28px 30px;
+  border-top: 1px solid #e0e0e0;
+  background-color: #ffffff;
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+}
+
+.footer-info-container > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3572ef;
+}
+
+.footer-info-container > p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link-container > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3572ef;
+}
+
+.footer-link-container > a {
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-link-container > a:hover {
+  color: #4f88f9;
+  text-decoration: underline;
+}
+
+.footer-link-container > a:active {
+  color: #1b5fe7;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    padding: 16px 24px;
+  }
+
+  header > p {
+    font-size: 20px;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 30px;
+    padding: 24px 30px;
+  }
+
+  .footer-info-container {
+    width: 100%;
+  }
+}

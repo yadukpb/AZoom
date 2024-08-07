@@ -1,0 +1,149 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+main > h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #3572ef;
+  text-align: center;
+}
+
+.reservation-container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.reservation-container > img {
+  width: 200px;
+  height: auto;
+  object-fit: cover;
+}
+
+.reservation-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.reservation-info > h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3572ef;
+}
+
+.reservation-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reservation-detail > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reservation-detail > div > h3 {
+  font-size: 14px;
+  color: #333;
+}
+
+.reservation-detail > div > p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .reservation-container {
+    flex-direction: column;
+  }
+
+  .reservation-container > img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .reservation-info {
+    padding: 10px;
+  }
+}
+
+
+
+/* Footer Styles */
+footer {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-info-container h1 {
+  font-size: 20px;
+  color: #3572ef;
+}
+
+.footer-info-container p {
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.footer-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-link-container h3 {
+  font-size: 16px;
+  color: #3572ef;
+}
+
+.footer-link-container a {
+  font-size: 14px;
+  color: #3572ef;
+  text-decoration: none;
+}
+
+.footer-link-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .detail-container,
+  .reservation-container,
+  .payment-container,
+  .success-message-container {
+    width: 100%;
+  }
+}
